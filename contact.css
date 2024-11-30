@@ -1,0 +1,169 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f0f2f5, #e6e9ef);
+    color: #333;
+}
+
+/* Glass Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #3b5998, #1e3c72);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: #ffcccb;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.contact-info, .contact-form, .contact-map {
+    padding: 20px;
+}
+
+.contact-info h2, .contact-form h2, .contact-map h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #3b5998;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #1e3c72;
+}
+
+.contact-map .map-placeholder {
+    height: 200px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 14px;
+    font-style: italic;
+}
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #2c3e50, #4ca1af); /* Darker gradient with cool tones */
+    padding: 20px 0;
+    text-align: center;
+    color: #000000; /* Softer text color for readability */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+}
+
+.footer-links {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #f1f1f1; /* Lightened for better contrast */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #4ca1af; /* Matches the gradient */
+    transform: scale(1.1); /* Slight hover animation */
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb; /* Subtle tone for additional text */
+}

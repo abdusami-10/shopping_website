@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | ShopEase</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">ShopEase</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero glass">
+        <div class="hero-content">
+            <h1>Explore Our Collection</h1>
+            <p>Find the best products for every occasion.</p>
+        </div>
+    </section>
+
+    <!-- Shop Container -->
+    <div class="shop-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass">
+            <h2>Filters</h2>
+            <input type="text" class="search-bar" placeholder="Search products...">
+            <h3>Categories</h3>
+            <ul class="categories">
+                <li><a href="#" data-category="all" class="active">All Products</a></li>
+                <li><a href="#" data-category="sneakers">Sneakers</a></li>
+                <li><a href="#" data-category="bags">Bags</a></li>
+                <li><a href="#" data-category="accessories">Accessories</a></li>
+            </ul>
+        </aside>
+
+        <!-- Products Section -->
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product glass" data-category="sneakers">
+                    <img src="assets/2.png" alt="Stylish Sneakers">
+                    <h3>Stylish Sneakers</h3>
+                    <p class="price">$49.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product glass" data-category="bags">
+                    <img src="assets/2.png" alt="Modern Backpack">
+                    <h3>Modern Backpack</h3>
+                    <p class="price">$39.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product glass" data-category="accessories">
+                    <img src="assets/2.png" alt="Wireless Earbuds">
+                    <h3>Wireless Earbuds</h3>
+                    <p class="price">$19.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <!-- Add more products here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="glass">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <p>&copy; 2024 ShopEase. All rights reserved.</p>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+</html>
